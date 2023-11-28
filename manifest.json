@@ -1,9 +1,9 @@
 {
-  "name": "service-example",
-  "vendor": "vtex",
-  "version": "0.2.0",
-  "title": "Service Example",
-  "description": "Reference app for VTEX IO Services",
+  "name": "store-example-vtex-training",
+  "vendor": "trika",
+  "version": "0.0.1",
+  "title": "Service Example Vtex Training",
+  "description": "Service Example Vtex Training",
   "mustUpdateAt": "2018-01-04",
   "categories": [],
   "dependencies": {},
@@ -19,8 +19,8 @@
     {
       "name": "outbound-access",
       "attrs": {
-        "host": "httpstat.us",
-        "path": "*"
+        "host": "trika.vtexcommercestable.com.br",
+        "path": "/*"
       }
     },
     {
@@ -30,5 +30,22 @@
       "name": "colossus-write-logs"
     }
   ],
+  "settingsSchema": {
+    "title": "Key Manager - SE Akshay",
+    "type": "object",
+    "access": "public",
+    "properties": {
+      "apiKey": {
+        "title": "API Key",
+        "description": "Enter the API Key ",
+        "type": "string"
+      },
+      "appToken": {
+        "title": "VTEX App Token key",
+        "description": "Enter the app token from user & rules",
+        "type": "string"
+      }
+    }
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
